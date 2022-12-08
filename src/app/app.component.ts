@@ -16,10 +16,10 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private appService: AppService) {}
 
   ngOnInit(): void {
-    this.getList();
+    this.getListFromService();
   }
 
-  getList() {
+  getListFromService() {
     this.subscription = this.appService
       .getList()
       .subscribe((list: ListObject[]) => {
