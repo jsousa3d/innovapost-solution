@@ -10,8 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent implements OnInit, OnDestroy {
   list: ListObject[] = [];
-  title = 'innovapost solution';
-
+  title = 'Innovapost Solution';
   subscription: Subscription = new Subscription();
 
   constructor(private appService: AppService) {}
